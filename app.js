@@ -22,10 +22,12 @@ document.addEventListener("DOMContentLoaded", () => {
 function checkPassword(e) {
   e.preventDefault();
   const input = document.getElementById("password-input").value;
-  if (input === "salesforce" || input === "admin") {
+  // Nueva contraseña configurada
+  if (input === "Salesforce2026") {
     document.getElementById("password-overlay").classList.add("unlocked");
   } else {
     document.getElementById("password-error").style.display = "block";
+    document.getElementById("password-error").innerText = "❌ Incorrect password. Try again.";
   }
 }
 
