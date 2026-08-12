@@ -1,0 +1,132 @@
+[
+  {
+    "id": 1,
+    "category": 2,
+    "text": "The director of sales wants to make sure that every opportunity has either a sales engineer or an account executive assigned to the deal. How should the administrator meet this requirement?",
+    "options": [
+      "Write a validation rule that checks if the fields are blank and require that one of them is completed in order to save the opportunity.",
+      "Create a different record type for deals with Sales Engineers and deals with Account Executives to capture one or the other.",
+      "Require the Sales Engineer and the Account Executive lookup fields on the page layout.",
+      "Assign a task to the owner if an opportunity is created without one of these fields filled out."
+    ],
+    "correct": 0,
+    "explanation": "A validation rule enforces data quality by preventing users from saving records that do not meet specified criteria. In this case, checking if both lookup fields are blank ensures at least one is populated."
+  },
+  {
+    "id": 2,
+    "category": 4,
+    "text": "AW Computing is running a special bundle deal on monitors and keyboards. Normally, discounts need VP approval, but this special bundle is pre-approved. What should the administrator recommend?",
+    "options": [
+      "Create a separate price book.",
+      "Implement CPQ.",
+      "Remove the approval process.",
+      "Enable Subscriptions."
+    ],
+    "correct": 1,
+    "explanation": "Implementing CPQ or utilizing separate pricing configurations allows structured bundle discounting without triggering standard approval processes."
+  },
+  {
+    "id": 3,
+    "category": 5,
+    "text": "Dream House Realty deals only with single-family homes but is expanding to include condos. There are specific features that only apply to condos. How should an administrator configure the Opportunity object?",
+    "options": [
+      "Build a Lightning component to display fields that only apply to condos.",
+      "Create a Record Type for the type of property and custom page layouts for each.",
+      "Configure a validation rule to display fields based on the property type.",
+      "Make a custom Lightning page to display specific fields based on property type."
+    ],
+    "correct": 1,
+    "explanation": "Creating Record Types paired with custom page layouts allows administrators to present tailored fields and picklist values specific to property types."
+  },
+  {
+    "id": 4,
+    "category": 5,
+    "text": "At Ursa Major Solar, there is a custom object called Galaxy. The sales director wants users to only see a specific set of fields. Which Lightning component satisfies this requirement?",
+    "options": [
+      "Record Detail Component",
+      "Fields Component",
+      "Highlights Panel Component",
+      "Path Component"
+    ],
+    "correct": 1,
+    "explanation": "The Fields component in Lightning App Builder allows administrators to render dynamic individual fields on a record page based on conditional visibility."
+  },
+  {
+    "id": 5,
+    "category": 1,
+    "text": "An administrator has been asked to enable permissions for users on the account services team to edit and change ownership of Accounts owned by any team member. What should be configured?",
+    "options": [
+      "Set organization-wide sharing for Account as Public Read Only.",
+      "Create a Sharing Rule on the Account object for all members of the account services role to have Read/Write access.",
+      "Update the profile Account object to Modify All.",
+      "Enable Account Teams and grant Read record-level access."
+    ],
+    "correct": 1,
+    "explanation": "Criteria or owner-based Sharing Rules on Accounts grant Read/Write access across users in specific roles or public groups without granting global 'Modify All Data' rights."
+  },
+  {
+    "id": 6,
+    "category": 1,
+    "text": "AW Computing has a private sharing model for Accounts, but a sales rep occasionally needs assistance from an engineer. What feature should be used to grant access to the specific Account?",
+    "options": [
+      "Permission Set",
+      "Permission Set Group",
+      "Account Teams",
+      "Custom Profile"
+    ],
+    "correct": 2,
+    "explanation": "Account Teams allow users to collaborate on specific account records and grant designated team members necessary record-level access (Read or Read/Write)."
+  },
+  {
+    "id": 7,
+    "category": 2,
+    "text": "Ursa Major Solar wants scientists to be notified when a star record is deleted and by whom. What automation solution should be used to send the notification?",
+    "options": [
+      "Heroku",
+      "Process Builder",
+      "Workflow Action",
+      "Flow"
+    ],
+    "correct": 3,
+    "explanation": "Record-triggered Flows (specifically delete-triggered flows) allow execution of logic and email alerts when records are deleted."
+  },
+  {
+    "id": 8,
+    "category": 1,
+    "text": "An administrator needs to grant View access to all Lead records to a contractor who has a profile for a project management app. How should this request be handled?",
+    "options": [
+      "Assign a permission set that has View All on Leads.",
+      "Add an app with the Leads tab to the user's profile.",
+      "Assign the contractor a public group with Lead access.",
+      "Create a profile with Read Only for all Leads."
+    ],
+    "correct": 0,
+    "explanation": "Permission sets allow granting specific object permissions (such as 'View All' on Leads) to individual users without modifying their assigned profiles."
+  },
+  {
+    "id": 9,
+    "category": 1,
+    "text": "Cloud Kicks deployed custom apps using Lightning Web Components. Which tool should the administrator use to evaluate the org's overall security settings and exposure?",
+    "options": [
+      "Health Check",
+      "Master Encryption Keys",
+      "Salesforce Optimizer",
+      "Self-signed Certificates"
+    ],
+    "correct": 0,
+    "explanation": "Salesforce Security Health Check evaluates the security posture of an org against Salesforce baseline recommendations."
+  },
+  {
+    "id": 10,
+    "category": 4,
+    "text": "Northern Trail Outfitters is expanding to the U.K. While products remain similar, pricing varies due to shipping and material costs. What should the administrator configure?",
+    "options": [
+      "Configure a U.K. Opportunity record type.",
+      "Write a flow that translates currency using a custom exchange rate field.",
+      "Add a new U.K. Order Form with the Euro symbol.",
+      "Create a new Price Book for U.K. product pricing."
+    ],
+    "correct": 3,
+    "explanation": "Price Books store specific lists of products and their prices tailored for different market segments or regions."
+  }
+]
